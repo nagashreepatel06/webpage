@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chandana Groups</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#e6e6e6;
+    padding:20px;
+}
+
+.container{
+    background:#2416a5;
+    border-radius:25px;
+    padding:50px 80px;
+    color:#fff;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:600;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+}
+
+.purchase-btn{
+    background:#ff5c7a;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+/* HERO SECTION */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:60px;
+}
+
+/* LEFT TEXT */
+.hero-left{
+    width:50%;
+}
+
+.hero-left h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:30px;
+}
+
+.hero-left p{
+    font-size:20px;
+    line-height:1.6;
+    margin-bottom:40px;
+    max-width:500px;
+}
+
+.learn-btn{
+    background:#ff5c7a;
+    padding:12px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    color:#fff;
+    font-weight:500;
+}
+
+/* SIGNUP CARD */
+.signup-card{
+    background:#f4f4f4;
+    width:400px;
+    padding:40px;
+    border-radius:25px;
+    color:#000;
+}
+
+.signup-card h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+.signup-card input{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:30px;
+    background:#e2e2e2;
+    outline:none;
+}
+
+.terms{
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.signin-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:#3b2bbf;
+    color:#fff;
+    font-size:16px;
+    margin-bottom:20px;
+    cursor:pointer;
+}
+
+.divider{
+    text-align:center;
+    margin:10px 0;
+    font-size:14px;
+}
+
+.google-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(to right, #4c42d7, #6c63ff);
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.bottom-text{
+    text-align:center;
+    margin-top:15px;
+    font-size:13px;
+}
+
+.bottom-text span{
+    color:green;
+    font-weight:500;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Chandana Groups</div>
+        <div class="nav-links">
+            <a href="#">OVERVIEW</a>
+            <a href="#">Price</a>
+            <a href="#">Blog</a>
+            <a href="#">Feedback</a>
+            <a href="#" class="purchase-btn">Purchase</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+
+        <!-- Left Content -->
+        <div class="hero-left">
+            <h1>Generate Awesome<br>Web Pages</h1>
+            <p>
+                The most important part of the Startup is the samples. 
+                The samples form a set of 25 usable pages you can use as is 
+                or you can add new blocks
+            </p>
+            <a href="#" class="learn-btn">Learn More</a>
+        </div>
+
+        <!-- Signup Card -->
+        <div class="signup-card">
+            <h2>Sign Up Now</h2>
+
+            <input type="email" placeholder="Your Email">
+            <input type="password" placeholder="Your Password">
+
+            <div class="terms">
+                <input type="checkbox"> I Agree to the terms of services
+            </div>
+
+            <button class="signin-btn">Sign IN</button>
+
+            <div class="divider">or</div>
+
+            <button class="google-btn">LogIn via Google</button>
+
+            <div class="bottom-text">
+                Do you have an Account ? <span>Sign IN</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
