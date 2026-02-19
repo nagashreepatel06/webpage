@@ -1,225 +1,212 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chandana Groups</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body{
     background:#e6e6e6;
-    padding:20px;
 }
 
-.container{
+.main-container{
     background:#2416a5;
     border-radius:25px;
-    padding:50px 80px;
-    color:#fff;
-}
-
-/* NAVBAR */
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:600;
-}
-
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:30px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#fff;
-    font-size:16px;
+    padding:50px 20px;
+    color:white;
+    margin:20px;
 }
 
 .purchase-btn{
     background:#ff5c7a;
-    padding:10px 20px;
     border-radius:25px;
-}
-
-/* HERO SECTION */
-.hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-top:60px;
-}
-
-/* LEFT TEXT */
-.hero-left{
-    width:50%;
-}
-
-.hero-left h1{
-    font-size:60px;
-    line-height:1.2;
-    margin-bottom:30px;
-}
-
-.hero-left p{
-    font-size:20px;
-    line-height:1.6;
-    margin-bottom:40px;
-    max-width:500px;
+    padding:8px 20px;
+    color:white;
+    text-decoration:none;
 }
 
 .learn-btn{
     background:#ff5c7a;
-    padding:12px 28px;
     border-radius:30px;
+    padding:10px 25px;
+    color:white;
     text-decoration:none;
-    color:#fff;
-    font-weight:500;
+    display:inline-block;
+    margin-top:15px;
 }
 
-/* SIGNUP CARD */
 .signup-card{
     background:#f4f4f4;
-    width:400px;
-    padding:40px;
+    padding:35px;
     border-radius:25px;
-    color:#000;
+    color:black;
+    margin-top:30px;
 }
 
-.signup-card h2{
-    text-align:center;
-    margin-bottom:30px;
-    font-size:28px;
-}
-
-.signup-card input{
-    width:100%;
-    padding:15px;
-    margin-bottom:20px;
-    border:none;
+.form-control{
     border-radius:30px;
-    background:#e2e2e2;
-    outline:none;
-}
-
-.terms{
-    font-size:13px;
-    margin-bottom:20px;
+    padding:12px;
 }
 
 .signin-btn{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:30px;
     background:#3b2bbf;
-    color:#fff;
-    font-size:16px;
-    margin-bottom:20px;
-    cursor:pointer;
-}
-
-.divider{
-    text-align:center;
-    margin:10px 0;
-    font-size:14px;
+    border-radius:30px;
+    padding:12px;
+    color:white;
+    border:none;
 }
 
 .google-btn{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:30px;
     background:linear-gradient(to right, #4c42d7, #6c63ff);
-    color:#fff;
-    font-size:16px;
-    cursor:pointer;
+    border-radius:30px;
+    padding:12px;
+    color:white;
+    border:none;
 }
 
-.bottom-text{
-    text-align:center;
-    margin-top:15px;
-    font-size:13px;
+hr{
+    border:1px solid #0d0000;
 }
 
-.bottom-text span{
-    color:green;
-    font-weight:500;
+.success-message{
+    display:none;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="container-fluid main-container">
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="logo">Chandana Groups</div>
-        <div class="nav-links">
-            <a href="#">OVERVIEW</a>
-            <a href="#">Price</a>
-            <a href="#">Blog</a>
-            <a href="#">Feedback</a>
-            <a href="#" class="purchase-btn">Purchase</a>
+    <!-- Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Chandana Groups</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">OVERVIEW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Feedback</a>
+                    </li>
+                    <li class="nav-item mt-2 mt-lg-0">
+                        <a class="purchase-btn ms-lg-3" href="#">Purchase</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <!-- Hero Section -->
-    <div class="hero">
+    <div class="row align-items-center">
 
-        <!-- Left Content -->
-        <div class="hero-left">
-            <h1>Generate Awesome<br>Web Pages</h1>
-            <p>
+        <!-- Left Side -->
+        <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold">
+                Generate Awesome <br class="d-none d-lg-block"> Web Pages
+            </h1>
+
+            <p class="lead mt-4">
                 The most important part of the Startup is the samples. 
                 The samples form a set of 25 usable pages you can use as is 
-                or you can add new blocks
+                or you can add new blocks.
             </p>
+
             <a href="#" class="learn-btn">Learn More</a>
         </div>
 
         <!-- Signup Card -->
-        <div class="signup-card">
-            <h2>Sign Up Now</h2>
+        <div class="col-lg-5 offset-lg-1">
+            <div class="signup-card shadow">
 
-            <input type="email" placeholder="Your Email">
-            <input type="password" placeholder="Your Password">
+                <h4 class="text-center mb-4">Sign Up Now</h4>
 
-            <div class="terms">
-                <input type="checkbox"> I Agree to the terms of services
-            </div>
+                <form onsubmit="return loginSuccess()">
 
-            <button class="signin-btn">Sign IN</button>
+                    <div class="mb-3">
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
 
-            <div class="divider">or</div>
+                    <div class="mb-3">
+                        <input type="password" id="password" class="form-control" placeholder="Your Password" required>
+                    </div>
 
-            <button class="google-btn">LogIn via Google</button>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" required>
+                        <label class="form-check-label">
+                            I Agree to the terms of services
+                        </label>
+                    </div>
 
-            <div class="bottom-text">
-                Do you have an Account ? <span>Sign IN</span>
+                    <!-- Sign In Button -->
+                    <button type="submit" class="signin-btn w-100 mb-3">
+                        Sign IN
+                    </button>
+
+                    <!-- Horizontal Divider -->
+                    <div class="d-flex align-items-center my-3">
+                        <hr class="flex-grow-1">
+                        <span class="px-3">or</span>
+                        <hr class="flex-grow-1">
+                    </div>
+
+                    <!-- Google Button -->
+                    <button type="button" class="google-btn w-100 mb-3">
+                        LogIn via Google
+                    </button>
+
+                </form>
+
+                <div class="text-center">
+                    Do you have an Account? 
+                    <span class="text-success">Sign IN</span>
+                </div>
+
+                <!-- Success Message -->
+                <div id="successMsg" class="alert alert-success mt-3 success-message">
+                    Login Successful ✅
+                </div>
+
             </div>
         </div>
 
     </div>
 
 </div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Login Script -->
+<script>
+function loginSuccess() {
+
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+    if(email !== "" && password !== "") {
+        document.getElementById("successMsg").style.display = "block";
+    }
+
+    return false; 
+}
+</script>
 
 </body>
 </html>
