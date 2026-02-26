@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chandana Groups - CRUD Operations</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f6ff;
+            text-align:center;
+        }
+        h1{
+            background:#1e1a9e;
+            color:white;
+            padding:20px;
+        }
+        input{
+            padding:10px;
+            margin:5px;
+            width:200px;
+        }
+        button{
+            padding:10px 15px;
+            margin:5px;
+            border:none;
+            background:#e94b5f;
+            color:white;
+            cursor:pointer;
+        }
+        table{
+            margin:20px auto;
+            border-collapse:collapse;
+            width:80%;
+            background:white;
+        }
+        th, td{
+            border:1px solid #ddd;
+            padding:10px;
+        }
+        th{
+            background:#1e1a9e;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Internship CRUD System</h1>
+
+<h2>Add / Update Student</h2>
+
+<input type="hidden" id="editIndex">
+
+<input type="text" id="name" placeholder="Student Name">
+<input type="text" id="domain" placeholder="Internship Domain">
+<button onclick="addStudent()">Save</button>
+
+<h2>Student List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Domain</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+</table>
+
+<script src="crud.js"></script>
+
+</body>
+</html>

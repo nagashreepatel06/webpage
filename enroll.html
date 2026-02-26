@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment Page</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#f4f6ff;
+            text-align:center;
+        }
+        h1{
+            background:#1e1a9e;
+            color:white;
+            padding:20px;
+        }
+        input{
+            padding:10px;
+            margin:10px;
+            width:250px;
+        }
+        button{
+            padding:10px 20px;
+            background:#e94b5f;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Enrollment Page</h1>
+
+<h2>Enter Student Details</h2>
+
+<input type="text" id="studentName" placeholder="Student Name"><br>
+<input type="text" id="studentEmail" placeholder="Student Email"><br>
+<input type="text" id="studentCourse" placeholder="Course Name"><br>
+
+<button onclick="goToCRUD()">Enroll & Continue</button>
+
+<script>
+function goToCRUD(){
+    let name = document.getElementById("studentName").value;
+    let email = document.getElementById("studentEmail").value;
+    let course = document.getElementById("studentCourse").value;
+
+    if(name === "" || email === "" || course === ""){
+        alert("Please fill all fields");
+        return;
+    }
+
+    // Save enrolled student in localStorage
+    localStorage.setItem("enrolledStudent", JSON.stringify({name, email, course}));
+
+    // Redirect to CRUD page
+    window.location.href = "crud.html";
+}
+</script>
+
+</body>
+</html>
