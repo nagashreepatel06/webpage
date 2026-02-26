@@ -4,209 +4,64 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chandana Groups</title>
-
-<!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
 <style>
-body{
-    background:#e6e6e6;
-}
-
-.main-container{
-    background:#2416a5;
-    border-radius:25px;
-    padding:50px 20px;
-    color:white;
-    margin:20px;
-}
-
-.purchase-btn{
-    background:#ff5c7a;
-    border-radius:25px;
-    padding:8px 20px;
-    color:white;
-    text-decoration:none;
-}
-
-.learn-btn{
-    background:#ff5c7a;
-    border-radius:30px;
-    padding:10px 25px;
-    color:white;
-    text-decoration:none;
-    display:inline-block;
-    margin-top:15px;
-}
-
-.signup-card{
-    background:#f4f4f4;
-    padding:35px;
-    border-radius:25px;
-    color:black;
-    margin-top:30px;
-}
-
-.form-control{
-    border-radius:30px;
-    padding:12px;
-}
-
-.signin-btn{
-    background:#3b2bbf;
-    border-radius:30px;
-    padding:12px;
-    color:white;
-    border:none;
-}
-
-.google-btn{
-    background:linear-gradient(to right, #4c42d7, #6c63ff);
-    border-radius:30px;
-    padding:12px;
-    color:white;
-    border:none;
-}
-
-hr{
-    border:1px solid #0d0000;
-}
-
-.success-message{
-    display:none;
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:#f2f2f2;}
+.container{background:#1e1a9e;color:white;width:95%;margin:30px auto;border-radius:25px;padding:50px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+.navbar{width:100%;display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;}
+.nav-links a{color:white;text-decoration:none;margin:0 15px;font-weight:500;}
+.purchase-btn{background:#e94b5f;padding:10px 25px;border-radius:25px;}
+.left{flex:1;min-width:300px;}
+.left h1{font-size:60px;margin-bottom:20px;}
+.left p{font-size:20px;line-height:1.6;margin-bottom:30px;}
+.learn-btn{background:#e94b5f;padding:12px 30px;border-radius:25px;color:white;text-decoration:none;display:inline-block;}
+.form-box{background:#eaeaea;color:black;padding:40px;border-radius:35px;width:380px;max-width:100%;}
+.form-box h2{text-align:center;margin-bottom:25px;}
+.input-box{width:100%;padding:15px;margin:10px 0;border:none;border-radius:25px;background:#dcdcdc;}
+.checkbox{margin:10px 0;}
+.signin-btn{width:100%;padding:15px;border:none;border-radius:25px;background:linear-gradient(to right,#3d2cc8,#5f4ae6);color:white;font-size:16px;margin-top:10px;cursor:pointer;}
+.google-btn{width:100%;padding:15px;border:none;border-radius:25px;background:linear-gradient(to right,#5f4ae6,#3d2cc8);color:white;font-size:16px;margin-top:15px;cursor:pointer;}
+.bottom-text{text-align:center;margin-top:15px;font-size:14px;}
+@media(max-width:900px){
+.container{flex-direction:column;text-align:center;}
+.left h1{font-size:40px;}
+.form-box{margin-top:30px;}
 }
 </style>
 </head>
-
 <body>
-
-<div class="container-fluid main-container">
-
-    <!-- Responsive Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">Chandana Groups</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">OVERVIEW</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Price</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Feedback</a>
-                    </li>
-                    <li class="nav-item mt-2 mt-lg-0">
-                        <a class="purchase-btn ms-lg-3" href="#">Purchase</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="row align-items-center">
-
-        <!-- Left Side -->
-        <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4 fw-bold">
-                Generate Awesome <br class="d-none d-lg-block"> Web Pages
-            </h1>
-
-            <p class="lead mt-4">
-                The most important part of the Startup is the samples. 
-                The samples form a set of 25 usable pages you can use as is 
-                or you can add new blocks.
-            </p>
-
-            <a href="#" class="learn-btn">Learn More</a>
-        </div>
-
-        <!-- Signup Card -->
-        <div class="col-lg-5 offset-lg-1">
-            <div class="signup-card shadow">
-
-                <h4 class="text-center mb-4">Sign Up Now</h4>
-
-                <form onsubmit="return loginSuccess()">
-
-                    <div class="mb-3">
-                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <input type="password" id="password" class="form-control" placeholder="Your Password" required>
-                    </div>
-
-                    <div class="form-check mb-3">
-                        <input class="form-check-input" type="checkbox" required>
-                        <label class="form-check-label">
-                            I Agree to the terms of services
-                        </label>
-                    </div>
-
-                    <!-- Sign In Button -->
-                    <button type="submit" class="signin-btn w-100 mb-3">
-                        Sign IN
-                    </button>
-
-                    <!-- Horizontal Divider -->
-                    <div class="d-flex align-items-center my-3">
-                        <hr class="flex-grow-1">
-                        <span class="px-3">or</span>
-                        <hr class="flex-grow-1">
-                    </div>
-
-                    <!-- Google Button -->
-                    <button type="button" class="google-btn w-100 mb-3">
-                        LogIn via Google
-                    </button>
-
-                </form>
-
-                <div class="text-center">
-                    Do you have an Account? 
-                    <span class="text-success">Sign IN</span>
-                </div>
-
-                <!-- Success Message -->
-                <div id="successMsg" class="alert alert-success mt-3 success-message">
-                    Login Successful ✅
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
+<div class="container">
+<div class="navbar">
+<h2>Chandana Groups</h2>
+<div class="nav-links">
+<a href="#">Overview</a>
+<a href="#">Price</a>
+<a href="#">Blog</a>
+<a href="#">Feedback</a>
+<a href="#" class="purchase-btn">Purchase</a>
 </div>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Login Script -->
-<script>
-function loginSuccess() {
-
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-
-    if(email !== "" && password !== "") {
-        document.getElementById("successMsg").style.display = "block";
-    }
-
-    return false; 
-}
-</script>
+</div>
+<div class="left">
+<h1>Generate Awesome<br>Web Pages</h1>
+<p>The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks</p>
+<a href="#" class="learn-btn">Learn More</a>
+</div>
+<div class="form-box">
+<h2>Sign Up Now</h2>
+<form action="internship.html">
+<input type="email" placeholder="Your Email" class="input-box" required>
+<input type="password" placeholder="Your Password" class="input-box" required>
+<div class="checkbox">
+<input type="checkbox" required> I Agree to the terms of services
+</div>
+<button type="submit" class="signin-btn">Sign In</button>
+</form>
+<button class="google-btn" onclick="window.location.href='internship.html'">Login via Google</button>
+<div class="bottom-text">
+Already have an Account? <a href="internship.html">Sign In</a>
+</div>
+</div>
+</div>
 
 </body>
 </html>
